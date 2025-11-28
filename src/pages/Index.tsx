@@ -1,6 +1,7 @@
 import Navigation from "../components/Navigation";
 import AboutSection from "../components/AboutSection";
 import ExperienceSection from "../components/ExperienceSection";
+import SocialSidebar from "../components/SocialSidebar";
 
 const Index = () => {
     return (
@@ -8,6 +9,7 @@ const Index = () => {
             <Navigation />
             <AboutSection />
             <ExperienceSection />
+            <SocialSidebar />
         </main>
     )
 }
