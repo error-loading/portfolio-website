@@ -6,7 +6,7 @@ export interface CardProps {
     delay?: number;
 }
 
-export const defaultCardProps: CardProps[] = [
+export const dataCardProps: CardProps[] = [
     // row 1
     {
         title: "Background",
