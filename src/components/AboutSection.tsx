@@ -12,6 +12,7 @@ const AboutSection = () => {
                             key={index}
                             title={card.title}
                             subtitle={card.subtitle}
+                            className={card.className}
                             description={card.description}
                             delay={card.delay}
                         />

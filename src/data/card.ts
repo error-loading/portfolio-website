@@ -25,6 +25,7 @@ export const dataCardProps: CardProps[] = [
         title: "Interests",
         subtitle: "Beyond Coding",
         description: "Enjoy hiking, photography, and exploring new technologies.",
+        className: 'about-card-row-span-2',
         delay: 300
     },
     // row 2
@@ -32,6 +33,7 @@ export const dataCardProps: CardProps[] = [
         title: "Soccer",
         subtitle: "Visca el Barca",
         description: "Avid FC Barcelona fan, following their matches and history closely.",
+        className: "about-card-col-span-2",
         delay: 400
     },
     // row 3

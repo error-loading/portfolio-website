@@ -6,7 +6,7 @@ const AboutCard = ({ title, subtitle, description, className='', delay=0 } : Car
 
     return (
         <div 
-        className={`card-glas about-card ${isVisible ? 'visible' : ''} `}
+        className={`card-glass about-card ${isVisible ? 'visible' : ''} ${className}`}
         style={{ animationDelay: `${delay}` }}>
             <h3 className="about-card-title">{title}</h3>
             {subtitle && <h4 className="about-card-subtitle">{subtitle}</h4>}
