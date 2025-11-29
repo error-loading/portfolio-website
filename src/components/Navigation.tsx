@@ -22,9 +22,9 @@ const Navigation = () => {
     return (
         <nav className={`nav ${isScrolled ? 'scrolled' : ''}`}>
             <div className="container nav-container">
-                <ul className="nav-items">
+                <ul className="nav-list">
                     {navItems.map((item, index) => (
-                        <li key={item.label} className="nav-item">
+                        <li key={item.label}>
                             <a href={item.href} className={`nav-link ${index === navItems.length - 1 ? 'nav-link-contact' : ''}`}>
                                 {item.label}
                             </a>

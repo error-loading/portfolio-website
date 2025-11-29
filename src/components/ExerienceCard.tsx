@@ -3,7 +3,7 @@ import { MapPin } from 'lucide-react';
 
 const ExperienceCard = ({experience, index} : {experience : Experience, index : Number}) => {
     return (
-        <div>
+        <div className="experience-card">
             {/* date */}
             <div className="experience-card-date">
                 <span>{experience.date}</span>

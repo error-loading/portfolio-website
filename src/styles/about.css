@@ -1,5 +1,5 @@
 /* about section */
-.about-section {
+.about {
     padding: 4rem 1rem;
     position: relative;
 }
@@ -28,7 +28,7 @@
     padding: 1.5rem;
     border-radius: var(--border-radius);
     transition: all var(--transition-slow);
-    opacity: 0;
+    opacity: 1;
 }
 
 .about-card:hover {
