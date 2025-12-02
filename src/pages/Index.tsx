@@ -4,6 +4,7 @@ import AboutSection from "../components/AboutSection";
 import ProjectSection from "../components/ProjectSection";
 import ExperienceSection from "../components/ExperienceSection";
 import SocialSidebar from "../components/SocialSidebar";
+import Particle from "../components/Particle";
 
 const Index = () => {
     return (
@@ -14,6 +15,7 @@ const Index = () => {
             <ProjectSection />
             <ExperienceSection />
             <SocialSidebar />
+            <Particle />
         </main>
     )
 }
