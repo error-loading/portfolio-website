@@ -1,4 +1,3 @@
-import { useState } from "react";
 import type { Project } from "../data/project";
 import { Github, ExternalLink } from "lucide-react";
 

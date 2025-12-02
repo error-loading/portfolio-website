@@ -8,7 +8,7 @@ const ExperienceSection = () => {
             <div className="container">
                 <h2 className="section-title experience-title">Experience</h2>
                 <div className="experience-cards">
-                    {experiences.map((exp, index) => (
+                    {experiences.map((exp) => (
                         <ExerperienceCard 
                             experience={exp}
                         />
