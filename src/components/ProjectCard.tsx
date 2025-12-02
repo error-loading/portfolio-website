@@ -3,10 +3,10 @@ import type { Project } from "../data/project";
 import { Github, ExternalLink } from "lucide-react";
 
 const ProjectCard = ({ project, index } : {project : Project, index : number}) => {
-    const [isVisible, setIsVisible] = useState(false);
+    // const [isVisible, setIsVisible] = useState(false);
     return (
         <div 
-        className={`card-glass project-card ${isVisible ? 'visible' : ''} `}
+        className={`card-glass project-card `}
         style={{ animationDelay: `${index * 150}ms` }}
         >
             {/* image and gradient */}

@@ -1,7 +1,7 @@
 import type { Experience } from '../data/experience';
 import { MapPin } from 'lucide-react';
 
-const ExperienceCard = ({experience, index} : {experience : Experience, index : Number}) => {
+const ExperienceCard = ({experience} : {experience : Experience}) => {
     return (
         <div className="experience-card">
             {/* date */}

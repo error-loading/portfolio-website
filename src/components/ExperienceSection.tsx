@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+
 import ExerperienceCard from "./ExerienceCard";
 import { experiences } from "../data/experience.ts";
 
@@ -11,7 +11,6 @@ const ExperienceSection = () => {
                     {experiences.map((exp, index) => (
                         <ExerperienceCard 
                             experience={exp}
-                            index={index}
                         />
                      ))}
                 </div>
