@@ -11,7 +11,7 @@ const ProjectCard = ({ project, index } : {project : Project, index : number}) =
         >
             {/* image and gradient */}
             <div className={`project-card-image ${project.gradientClass}`}>
-                <span className="project-card__initial">
+                <span className="project-card-initial">
                     {project.title.charAt(0)}
                 </span>
             </div>
@@ -31,13 +31,13 @@ const ProjectCard = ({ project, index } : {project : Project, index : number}) =
                 {/* links */}
                 <div className="project-card-links">
                     {project.github && (
-                        <a href={project.github} target="_blank" className="project-card__link" rel="noopener noreferrer" aria-label="GitHub Link">
+                        <a href={project.github} target="_blank" className="project-card-link" rel="noopener noreferrer" aria-label="GitHub Link">
                             <Github size={16} />
                             Code
                         </a>
                     )}
                     {project.demo && (
-                        <a href={project.demo} target="_blank" className="project-card__link" rel="noopener noreferrer" aria-label="Live Demo Link">
+                        <a href={project.demo} target="_blank" className="project-card-link" rel="noopener noreferrer" aria-label="Live Demo Link">
                             <ExternalLink size={20} />
                             Live Demo
                         </a>

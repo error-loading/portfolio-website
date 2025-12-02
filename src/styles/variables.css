@@ -1,42 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
 
-/* Design Tokens */
 :root {
-  /* Carbon Glass — Dark Theme */
-  --color-background: hsl(0, 0%, 5%);        /* #0D0D0D */
-  --color-foreground: hsl(0, 0%, 96%);       /* #F5F5F5 */
-
-  --color-card: hsl(0, 0%, 13%);             /* #232323 */
-  --color-card-foreground: hsl(0, 0%, 96%);
-
-  --color-primary: hsl(217, 92%, 61%);       /* #3B82F6 */
-  --color-primary-foreground: hsl(0, 0%, 100%);
-
-  --color-secondary: hsl(174, 72%, 45%);     /* #14B8A6 */
-  --color-secondary-foreground: hsl(0, 0%, 10%);
-
-  --color-muted: hsl(0, 0%, 15%);            /* darker neutral */
-  --color-muted-foreground: hsl(0, 0%, 70%); /* softer gray text */
-
-  --color-accent: hsl(217, 92%, 61%);        /* using primary as accent */
-  --color-accent-foreground: hsl(0, 0%, 100%);
-
-  --color-border: hsl(0, 0%, 18%);           /* #2E2E2E */
-
-  --color-destructive: hsl(0, 70%, 55%);     /* slightly tuned red */
-
-  /* Accents */
-  --accent-h: 221;
-  --accent-s: 83%;
-  --accent-l: 53%;
-
-  /* Fonts */
+  --color-background: hsl(220, 25%, 6%);
+  --color-foreground: hsl(210, 20%, 92%);
+  --color-card: hsl(220, 20%, 10%);
+  --color-card-foreground: hsl(210, 20%, 92%);
+  --color-primary: hsl(210, 100%, 60%);
+  --color-primary-glow: hsl(210, 100%, 70%);
+  --color-primary-foreground: hsl(220, 25%, 6%);
+  --color-secondary: hsl(215, 30%, 18%);
+  --color-secondary-foreground: hsl(210, 20%, 92%);
+  --color-muted: hsl(220, 15%, 15%);
+  --color-muted-foreground: hsl(210, 15%, 55%);
+  --color-accent: hsl(200, 80%, 50%);
+  --color-accent-foreground: hsl(220, 25%, 6%);
+  --color-border: hsl(215, 20%, 20%);
+  --color-destructive: hsl(0, 62%, 50%);
+  
   --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
   --font-playfair: 'Playfair Display', ui-serif, Georgia, serif;
-
-  /* Radius / Motion */
+  
   --radius: 0.75rem;
   --transition-fast: 0.2s ease;
   --transition-normal: 0.3s ease;
   --transition-slow: 0.5s ease;
 }
+
