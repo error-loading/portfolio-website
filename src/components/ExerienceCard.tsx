@@ -1,9 +1,34 @@
+import { useEffect, useRef, useState } from 'react';
 import type { Experience } from '../data/experience';
 import { MapPin } from 'lucide-react';
 
-const ExperienceCard = ({experience} : {experience : Experience}) => {
+const ExperienceCard = ({experience, index} : {experience : Experience, index : number}) => {
+    const [isVisible, setIsVisible] = useState(false);
+    const cardRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+        ([entry]) => {
+            if (entry.isIntersecting) {
+            setIsVisible(true);
+            }
+        },
+        { threshold: 0.1 }
+        );
+
+        if (cardRef.current) {
+        observer.observe(cardRef.current);
+        }
+
+        return () => observer.disconnect();
+    }, []);
+
     return (
-        <div className="experience-card">
+        <div
+            ref={cardRef} 
+            className={`experience-card ${isVisible ? 'animate-fade-in' : ''}`}
+            style={{ animationDelay: `${index * 150}ms` }}
+        >
             {/* date */}
             <div className="experience-card-date">
                 <span>{experience.date}</span>

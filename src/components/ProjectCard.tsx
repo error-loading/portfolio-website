@@ -1,11 +1,30 @@
+import { useEffect, useRef, useState } from "react";
 import type { Project } from "../data/project";
 import { Github, ExternalLink } from "lucide-react";
 
 const ProjectCard = ({ project, index } : {project : Project, index : number}) => {
-    // const [isVisible, setIsVisible] = useState(false);
+    const [isVisible, setIsVisible] = useState(false);
+    const cardRef = useRef<HTMLDivElement | null>(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry], obs) => {
+                if (entry.isIntersecting) {
+                    setIsVisible(true);
+                    obs.unobserve(entry.target);
+                }
+            },
+            { threshold: 0.1 }
+        );
+
+        if (cardRef.current) observer.observe(cardRef.current);
+        return () => observer.disconnect();
+    }, []);
+
     return (
         <div 
-        className={`card-glass project-card `}
+        ref={cardRef}
+        className={`card-glass project-card ${isVisible ? 'animate-fade-in' : ''}`}
         style={{ animationDelay: `${index * 150}ms` }}
         >
             {/* image and gradient */}
